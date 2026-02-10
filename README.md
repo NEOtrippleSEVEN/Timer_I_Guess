@@ -1,25 +1,36 @@
 # Space Timer
 
-A simple, straightforward, space-themed countdown timer for the terminal.
+A simple space-themed timer with:
+
+- **CLI mode** (fast terminal countdown)
+- **UI mode** (nice starry window with Start / Pause / Reset)
 
 ## Requirements
 
 - Python 3.8+
+- Tkinter (usually included with Python)
 
-## Run
+## Quick Start
+
+### 1) UI mode (recommended)
+
+```bash
+python3 space_timer.py --ui
+```
+
+In the UI you can:
+
+- Enter a duration (`90` or `01:30`)
+- Set a label
+- Click **Start**, **Pause**, and **Reset**
+
+### 2) CLI mode
 
 ```bash
 python3 space_timer.py <duration> [--label "Mission Name"]
 ```
 
-## Duration formats
-
-You can pass duration as:
-
-- Seconds: `90`
-- Minutes and seconds: `01:30`
-
-## Examples
+Examples:
 
 ```bash
 python3 space_timer.py 30
@@ -27,12 +38,12 @@ python3 space_timer.py 01:30
 python3 space_timer.py 120 --label "Deep Space Focus"
 ```
 
-## What it shows
+## Duration format
 
-- A countdown (`T-00:30`)
-- A subtle animated moon/star indicator
-- A progress bar and percentage
+- Seconds: `90`
+- Minutes and seconds: `01:30`
 
 ## Stop early
 
-Press `Ctrl+C` to cancel the timer.
+- **UI:** click Pause or Reset
+- **CLI:** press `Ctrl+C`
